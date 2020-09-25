@@ -1,13 +1,24 @@
 <!DOCTYPE html lan ='en>
 <html>
     <head>
-        <title>
-            Home   <!-- can be changed just setting up basic stuff-->
-        </title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <title>Home</title>
     </head>
-    <body>
-        <header>
-            Homepage
-        </header>
+    <body style = "background-color:yellow;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">STS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Tutors</a>
+                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#">Contact us</a>
+              </div>
+            </div>
+          </nav>
+          <button type="button" class="btn btn-outline-secondary">Login</button>
     </body>
 </html>
