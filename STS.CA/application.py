@@ -1,1 +1,12 @@
-print ("just trying to see if this works")
+from flask import Flask
+
+#CONFIGURE APPLICATION
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return "Hello, World!"
+
+if __name__ == "__main__":
+    app.run(debug==True)
