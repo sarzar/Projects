@@ -3,16 +3,33 @@
     <head>
        <meta charset = "utf-8">
        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
-       <link href="styles.css" rel="stylesheet">
+       <link id = "pagestyle" href="styles.css" href="medium.css" href="small.css" rel="stylesheet">
+       <script type= "text/javascript">
+       function layoutHandler () {
+         var stylelink = document.getElementById("pagestyle");
+       }
+       </script>
+
         <title>Home</title>
     </head>
-    <body >
+    <body style = "background-color: #f2f2f2;
 
        <div class = "grid">
-         <div class = "title">title</div>
+         <div class = "title">
+          
+          <button class="login"> Login</button>
+          <button class="STS"> STS</button>
+          <button class="Tutors"> Tutors</button>
+          <button class="FAQ"> FAQ</button>
+         </div>
          <div class = "header">header</div>
          <div class = "sidebar">sidebar</div>
-         <div class = "content">content</div>
+         <div class = "content">
+           <form class = "search">
+             <input type = "text" placeholder = "Search for a subject">
+             <input type = "submit" placeholder = "Search">
+           </form>
+         </div>     
          <div class = "footer">footer</div>
        </div>
 
