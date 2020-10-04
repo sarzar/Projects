@@ -1,25 +1,39 @@
 <!DOCTYPE html lan ='en>
 <html>
     <head>
-       <link href="styles.css" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-        <title>Home</title>
-        <script>
-         heightWindow =  $( window ).height();
-        </script>
-    </head>
-    <body style = "background-color:lightgray; margin: 0; padding: 0; width: 100% max-height: heightWindow; ">
-    
+       <meta charset = "utf-8">
+       <meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
+       <link id = "pagestyle" href="styles.css" href="medium.css" href="small.css" rel="stylesheet">
+       <script type= "text/javascript">
+       function layoutHandler () {
+         var stylelink = document.getElementById("pagestyle");
+       }
+       </script>
 
-      </div>        
-      <button type="button" style="position:relative; left:93%; top:10px;">Login</button>
+        <title>Home</title>
+    </head>
+    <body style = "background-color: #f2f2f2;
+
+       <div class = "grid">
+         <div class = "title">
           
-            
-            <form style= "position:relative;  left: 35%; top: 25%; " class = "searchbar">
-              <input class ="searchbar" type="search" placeholder="Subject" aria-label="Search" >
-              <button  style ="position:relative;  left: 0%; top: 25%; width: 20%;height : 30% ; box-sizing: border-box;"
-              type="submit">Search</button>
-            </form>
-          </nav>
+          <button class="login"> Login</button>
+          <button class="STS"> STS</button>
+          <button class="Tutors"> Tutors</button>
+          <button class="FAQ"> FAQ</button>
+         </div>
+         <div class = "header">header</div>
+         <div class = "sidebar">sidebar</div>
+         <div class = "content">
+           <form class = "search">
+             <input type = "text" placeholder = "Search for a subject">
+             <input type = "submit" placeholder = "Search">
+           </form>
+         </div>     
+         <div class = "footer">footer</div>
+       </div>
+
+        
+     
     </body>
 </html> 
