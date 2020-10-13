@@ -99,11 +99,10 @@
 /*INPUT FOR SEARCH BAR*/
 .searchinput {
     position: relative;
-    font-size: medium;
-    font-weight: 200;
-    width: 53%;
-    height: 50px;
-    left: 5%;
+    font-size: 100%;
+    font-weight: 40%;
+    width: 54%;
+    height: 75px;
     border-radius: 40px;
     background-color: transparent;
     border:solid black;
@@ -112,15 +111,30 @@
 .submit {
     position: relative;
     width: 10%;
-    height: 8%;
+    height:10%;
     right: 3%;
-    background: url(../Images/102634-200.png)no-repeat ;
-    background-size: 35px;
+    background: url(../Images/search-icon-light-grey-hi.png)no-repeat ;
+    background-size: 50%;
     font-size: xx-small;
     border: none;
+    font-size: 0.000000000000000001%;
+
+    
 }
-/*----------------------FOOTER---------------------------------*/
-.footer {
-    grid-area: footer;
-    padding: 3%;
+@media (min-width: 1000px) {
+   
+        .searchinput {
+            
+            position: relative;
+           
+            font-size: 100%;
+            font-weight: 40%;
+            width: 500px;
+            height: 75px;
+           
+            border-radius: 40px;
+            background-color: transparent;
+            border:solid black;
+        }
+    
 }
