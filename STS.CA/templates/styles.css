@@ -18,6 +18,18 @@
         "header content"
         "footer footer";
     }
+    .login {
+        position: relative;
+        background: none;
+        border: 1px solid black;
+    
+        padding: 5px 15px;
+    
+        font-size: 17px;
+        left: 75%;
+
+
+        }
 }
 @media screen and (min-width: 1024 px) {
     .grid {
@@ -31,6 +43,7 @@
         "footer footer";
 
     }
+    
 }
 /*----------------------TITLE---------------------------------*/
 .title {
@@ -43,12 +56,25 @@
 /*NAVBAR*/
 .navbar {
     position: relative;
-    font-size: 85%;
-    right:6%;
-    width:6%; 
+    font-size: 95%;
+    right: 25px;
+    padding: 10px;
     background: none;
     border: none;
   
+    
+}
+
+.logohome{
+
+    background-image: url(../Images/STS.png);
+    background-size: cover;
+    border: none;
+    background-size: 24px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
     
 }
 /*LOGIN BUTTON FOR TITLE*/
@@ -57,11 +83,11 @@
     background: none;
    border: 1px solid black;
     
-    padding: 1% 2%;
+    padding: 5px 15px;
     
     font-size: 17px;
-    left:92%;
-
+    left: 92%;
+    
 }
 /*----------------------HEADER---------------------------------*/
 .header {
@@ -108,33 +134,147 @@
     border:solid black;
 }
 /*SUBMIT BUTTON FOR SEARCH BAR*/
-.submit {
-    position: relative;
-    width: 10%;
-    height:10%;
-    right: 3%;
-    background: url(../Images/search-icon-light-grey-hi.png)no-repeat ;
-    background-size: 50%;
-    font-size: xx-small;
-    border: none;
-    font-size: 0.000000000000000001%;
 
+.search-box {
+    position: absolute; 
+    height: 50%; 
+    left: 45%; 
+    transform: translate (-50%, -50%); 
+    background: black;
+    height: 40px; 
+    border-radius: 40px; 
+    padding: 10px;  
     
+}
+
+.search-box:hover >.search-txt{
+    width:300px; 
+    padding: 0 6px; 
+
+}
+.search-box:hover >.search-btn{
+    background: darkgray; 
+
+}
+.search-btn {
+    color: yellow; 
+    float: right; 
+    width: 40px; 
+    border-radius: 50%;
+    background: black ; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 40px; 
+    transition: 0.4s;
+
+}
+.search-txt {
+    border: none; 
+    background: none; 
+    outline: none; 
+    float: left;    
+    padding: 0; 
+    color: white; 
+    font-size: 16px; 
+    transition: 0.4s; 
+    line-height: 40px ; 
+    width: 0px; 
+
+
 }
 @media (min-width: 1000px) {
    
-        .searchinput {
-            
-            position: relative;
-           
-            font-size: 100%;
-            font-weight: 40%;
-            width: 500px;
-            height: 75px;
-           
-            border-radius: 40px;
-            background-color: transparent;
-            border:solid black;
-        }
+        /*--------------SEARCH BAR------------------*/
+
+.search-box {
+    position: absolute; 
+    height: 50%; 
+    left: 45%; 
+    transform: translate (-50%, -50%); 
+    background: black;
+    height: 40px; 
+    border-radius: 40px; 
+    padding: 10px;  
     
 }
+
+.search-box:hover >.search-txt{
+    width:300px; 
+    padding: 0 6px; 
+
+}
+.search-box:hover >.search-btn{
+    background: darkgray; 
+
+}
+.search-btn {
+    color: yellow; 
+    float: right; 
+    width: 40px; 
+    border-radius: 50%;
+    background: black ; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 35px; 
+    transition: 0.4s;
+
+}
+.search-txt {
+    border: none; 
+    background: none; 
+    outline: none; 
+    float: left;    
+    padding: 0; 
+    color: white; 
+    font-size: 16px; 
+    transition: 0.4s; 
+    line-height: 40px ; 
+    width: 0px; 
+
+
+}
+        
+}
+.footer{
+    background-color: dimgray;
+    font-size: small;
+    background-blend-mode: color-burn;
+}
+
+/*WHEN SCREEN REACHES CERTAIN SIZE THESE ARE OVERLOADED*/
+@media (max-width: 900px){
+    .login {
+        position: relative;
+        background: none;
+        border: 1px solid black;
+    
+        padding: 5px 15px;
+    
+        font-size: 17px;
+        left: 87%;
+
+
+        }
+}
+@media (max-width: 700px) {
+   
+    .searchbox {
+        left:10%;
+    }
+
+    .search-box:hover >.search-txt{
+        width:150px; 
+        padding: 0 6px; 
+    
+    }
+}
+
+@media (max-width: 700px) {
+   
+    .searchbox {
+        left:20%;
+    }
+}
+
