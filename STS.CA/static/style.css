@@ -66,15 +66,16 @@
 }
 
 .logohome{
-
-    background-image: url(../Images/STS.png);
-    background-size: cover;
-    border: none;
     background-size: 24px;
+ 
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
 
+    
+}
+.homelogo{
+    transform: translate (-50%, -50%);
     
 }
 /*LOGIN BUTTON FOR TITLE*/
@@ -84,7 +85,6 @@
    border: 1px solid black;
     
     padding: 5px 15px;
-    
     font-size: 17px;
     left: 92%;
     
@@ -102,13 +102,16 @@
 /*----------------------CONTENT---------------------------------*/
 .content {
     grid-area: content;
-    background-image: url(../Images/students-learning-xlarge.jpg);
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Images/students-learning-xlarge.jpg);
+    background-image: url_for('static',filename = 'Images/image1.jpg');
+   /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://image.freepik.com/free-photo/multi-ethnic-group-young-people-studying-together-white-de_1139-987.jpg");*/
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20%;
 }
+
+
 /*LOGO FOR CENTRE OF PAGE*/
 .logo {
     position: relative;

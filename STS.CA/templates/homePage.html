@@ -3,7 +3,7 @@
     <head>
        <meta charset = "utf-8">
        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
-       <link id = "pagestyle" href="styles.css" href="medium.css" href="small.css" rel="stylesheet">
+       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
        <script defer src= "https://use.fontawesome.com/releases/v5.0.6/js/all.js" ></script>
        <script type= "text/javascript">
        ('#body').css('min-height', '100%');
@@ -12,14 +12,12 @@
 
         <title>Home</title>
     </head>
-    <body style = "background-color: #f2f2f2;">
-
+    <body>
        <div class = "grid">
               
          <div class = "title">
-          <button class = "logohome">grkgkvrjk</button>
+          <button class = "logohome"> <img class="homelogo" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/STS_Logo_rebranded.png" alt="" height=50 width=50></button>
           <button class="login"> Login</button>
-          <button class="navbar"> STS</button>
           <button class="navbar"> Tutors</button>
           <button class="navbar"> FAQ</button>
           <button class="navbar"> Subjects</button>
